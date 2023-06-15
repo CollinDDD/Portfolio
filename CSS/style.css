@@ -62,6 +62,12 @@ p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+ol{
+    text-align: left;
+    list-style-position: inside;
+    padding-left: 48%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 /*about me*/
 
 .about-me-header {
