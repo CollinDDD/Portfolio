@@ -1,0 +1,116 @@
+@font-face {
+    font-family: header;
+    src: url(../CSS/fonts/Playball.ttf);
+}
+
+/* header */
+header {
+    background-color: #9dc788;
+    color: rgb(67, 37, 37);
+    margin-bottom: 0px;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+}
+header h1 {
+    font-family: header, cursive;
+    font-weight: 900;
+    font-size: 68px;
+    margin: 0 auto;
+    text-align: center;
+}
+header h2 {
+    font-size: 34px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    text-align: center;
+}
+/* body */
+body {
+    background-color: rgb(249, 233, 196);
+    margin: 0 auto;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+    margin: 0 auto;
+}
+
+ul{
+    text-align: left;
+    list-style-position: inside;
+    padding-left: 30%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img {
+    padding-top: 1em;
+    max-width: 25%;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*about me*/
+
+.about-me-header {
+    background-color: #9dc78887;
+    color: rgb(67, 37, 37);
+}
+
+.about-me-header hr { 
+    width: 7.7em;
+    border: 1px solid black;
+}
+
+ol{
+    text-align: left;
+    list-style-position: inside;
+    padding-left: 30%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* contact */
+
+.contact-header {
+    background-color: #9dc78887;
+    color: rgb(67, 37, 37);
+}
+.contact-header hr {
+    width: 15.6em;
+    border: 1px solid rgb(67, 37, 37);
+}
+
+.contact p {
+    text-align: left;
+    padding-left: 30%;
+}
+
+/* footer */
+
+footer {
+    background-color: #9dc788;
+    height: 3em;
+    text-align: right;
+    padding-top: .1em;
+    width: 100%
+}
+
+footer p {
+    padding-right: 2em;
+}
