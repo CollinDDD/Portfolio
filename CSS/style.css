@@ -59,8 +59,7 @@ body {
     flex-direction: row;
     color: white;
     font-size: 32px;
-    width: 100%;
-    max-width: 100%;
+    justify-content: space-evenly;
 }
 
 .img img {
@@ -132,8 +131,17 @@ h2 {
     flex-wrap:wrap;
 }
 .container h3 {
-    height: 64px;
-    
+    height: 64px; 
+}
+
+.title {
+    align-self: center;
+    width: 50%;
+}
+
+.icon {
+    width: 15%;
+    margin: 0 auto;
 }
 
 .restaurant {
@@ -195,12 +203,41 @@ h2 {
     opacity: 0; 
 }
 
+.restaurant,
+.movies,
+.flashcard,
+.recipe {
+    flex: 1;
+    align-content: center;
+}
+/* contact */
+
+.contact {
+    margin-top: 64px;
+}
+
+.contact h2 {
+    text-align: center;
+    color: white;
+}
+
+.contact-icons {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 48px;
+    margin: 0;
+}
+
+.contact-icons p {
+    font-size: 24px;
+    margin-bottom: 28px;
+}
 
 /* footer */
 
 footer {
     background-color: #d4b9ab;
-    text-align: right;
     width: 100%;
     box-sizing:border-box;
     padding: 10px 0;
@@ -209,6 +246,11 @@ footer {
 
 footer p {
     padding-right: 2em;
+    text-align: right;
+}
+
+footer nav {
+    text-align: center;
 }
 
 /*responsiveness*/
@@ -259,4 +301,3 @@ footer p {
     }
 
 }
-
