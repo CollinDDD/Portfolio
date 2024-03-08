@@ -33,6 +33,7 @@ header h2 {
     text-align: center;
 }
 
+
 nav {
     margin: 0 auto;
 }
@@ -44,6 +45,7 @@ a {
 button {
     border-radius: 15px;
     margin: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.495);
 }
 
 button:hover {
@@ -98,6 +100,7 @@ article {
 }
 
 .text {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
     font-size: 32px;
 }
@@ -109,7 +112,7 @@ ul{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-img {
+.img img {
     padding-top: 1em;
     max-width: 25%;
 }

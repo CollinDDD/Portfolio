@@ -7,13 +7,17 @@
     src: url(../CSS/fonts/ShareTech-Regular.ttf);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* header */
 header {
     background-color: #e4dad5;
     color: rgb(46, 46, 46);
     margin-bottom: 0px;
     margin-top: 0px;
-    padding-top: 24px;
+    padding-top: 0px;
     display: flex;
     flex-direction: column;
 }
@@ -29,6 +33,7 @@ header h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 900;
     text-align: center;
+    margin: 0px;
 }
 
 nav {
@@ -43,14 +48,11 @@ a {
 
 
 /* body */
+/* intro */
 body {
     background-color: rgb(46, 46, 46);
-    margin: 0 auto;
 }
 
-article {  
-    margin: 0 auto;
-}
 
 .pandt {
     display:flex;
@@ -67,17 +69,14 @@ article {
     max-width: 100%; 
 }
 
-.text {
-   
-    align-self: center;
-}
+.text p{
+text-align: left;}
 .skills {
     font-size: 32px;
     font-family: tech, sans-serif; 
-    
     color: white;
     display: flex;
-    justify-content:space-evenly;
+    justify-content:space-between;
 }
 
 
@@ -94,8 +93,6 @@ ul {
     color: rgb(234, 0, 255);
 }
 
-
-
 .tools ul ::marker {
     color: rgb(0, 149, 255);
 }
@@ -104,8 +101,99 @@ h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+/* projects */ 
+
+.projects h2, p {
+    color: white;
+    text-align: center;
+}
+
+.projects a:visited {
+    color: inherit;
+}
+
+.project-items {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.project-items ion-icon {
+    font-size: 2.5em;
+    color: black;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width:20%;
+    flex-wrap:wrap;
+}
+.container h3 {
+    height: 64px;
+    
+}
+
+.restaurant {
+    background: linear-gradient(to bottom right, #ffee00, #ff5500);
+}
+
+.restaurant:hover {
+    background-image: url(./Images/project-images/Restaurant.PNG);
+    background-size: cover;
+    background-position: center;
+}
 
 
+.restaurant:hover .content {
+    opacity: 0; 
+}
+
+
+.movies {
+    background: linear-gradient(to bottom right, #ff2a00, #e100ff);
+}
+
+.movies:hover {
+    background-image: url(./Images/project-images/movies.PNG);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.movies:hover .content {
+    opacity: 0; 
+}
+
+.flashcard {
+    background: linear-gradient(to bottom right, #5500ff, #00a6ff);
+}
+
+.flashcard:hover {
+    background-image: url(./Images/project-images/flashcard.PNG);
+    background-size: cover;
+    background-position: center;
+}
+
+.flashcard:hover .content {
+    opacity: 0; 
+}
+
+.recipe {
+    background: linear-gradient(to bottom right, #00ffea, #91ff00);
+}
+
+.recipe:hover {
+    background-image: url(./Images/project-images/recipe.PNG);
+    background-size: cover;
+    background-position: center;
+}
+
+.recipe:hover .content {
+    opacity: 0; 
+}
 
 
 /* footer */
@@ -123,19 +211,21 @@ footer p {
     padding-right: 2em;
 }
 
+/*responsiveness*/
+
 @media (max-width: 768px) {
     .pandt {
         flex-direction: column;
-
+        text-align: center;
     }
     .img img {
         width: 100%;
         height: auto;
         max-width: 100%;
     }  
-    .text {
+    .text p {
         text-align: center;
-        max-width: 75%; 
+        max-width: 100%; 
     }
     .skills {
         flex-direction: column;
@@ -158,5 +248,15 @@ footer p {
     .tools h3 {
         text-decoration: underline;
     }
+    .project-items {
+        flex-direction: column;
+    }
+    .container {
+        width: 100%;
+    }
+    .container .content, h3, a {
+        font-size: x-large;
+    }
+
 }
 

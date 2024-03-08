@@ -7,15 +7,15 @@
 </head>
 <body>
     <!--header-->
-    <header>
+    <header id="top">
         <h1>Collin DeWalt</h1>
         <h2>Full-Stack Engineer</h2>
         <br>
         <nav>
-            <a href="./index.html">
+            <a href="#top">
                Home 
             </a>
-            <a href="./projects.html">
+            <a href="#projects">
                 Projects
             </a>
             <a href="./contact.html">
@@ -26,7 +26,7 @@
     <main>
         <article>
             <!--intro-->
-            <section class="intro">
+            <section class="intro" id="intro">
                 <div class="pandt">
                     <div class="img">
                         <img src="CSS/Images/profile-picture.jpg" alt="picture of Collin DeWalt">
@@ -71,8 +71,72 @@
                 </div>
                 
             </section>
+            <section class="projects" id="projects">
+                <h2>Projects</h2>
+                <p>
+                    Click on the titles to check out some of my apps.
+                </p>
+                <div class="project-items">
+                    <div class="container">
+                        <a href="https://restaurant-reservation-frontend-pp1i.onrender.com" target="_blank">
+                            <h3>Restaurant Reservation App</h3>
+                        </a>
+                        <a href="https://github.com/CollinDDD/restaurant-reservation-final-product" target="_blank">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a>
+                        <div class="restaurant">
+                            <div class="content">
+                                <p>A restaurant app that employees can use to book reservations, assign customers to tables, and search for customers by phone number</p>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <a href="https://welovemovies-frontend-en4l.onrender.com/" target="_blank">
+                            <h3>Movie Info App</h3>
+                        </a>
+                        <a href="https://github.com/CollinDDD/WeLoveMovies" target="_blank">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a>
+                        <div class="movies">
+                            <div class="content">
+                                <p>An app that gives information about movies such as what moveis are playing, what theaters are playing the movies, and where the theaters' locations are.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <a href="https://flash-o-matic-hzkb.onrender.com" target="_blank">
+                            <h3>Flashcard App</h3>
+                        </a>
+                        <a href="https://github.com/CollinDDD/Flash-O-Matic" target="_blank">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a>
+                        <div class="flashcard">
+                            <div class="content">
+                                <p>A flashcard app that can be used for students.  You can use this app to create different decks to study from as well as create your own cards for each deck.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <a href="https://recipe-app-9iw0.onrender.com" target="_blank">
+                            <h3>Recipe App</h3>
+                        </a>
+                        <a href="https://github.com/CollinDDD/recipe-app" target="_blank">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a>
+                        <div class="recipe">
+                            <div class="content">
+                                <p>A recipe app that allows people to create and save their favoite recipes with inputs such as name, cuisine, photo, ingredients, and preparation.</p>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
     </main>
     <footer>
         <p>&copy;Collin DeWalt</p>
     </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
