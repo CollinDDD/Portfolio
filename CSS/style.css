@@ -137,11 +137,15 @@ h2 {
 .title {
     align-self: center;
     width: 50%;
+    transition: color .5s;
 }
 
 .icon {
-    width: 15%;
-    margin: 0 auto;
+    margin: 0 auto; 
+}
+
+.icon:hover {
+    background: linear-gradient(to bottom right, rgb(67, 67, 67), rgb(35, 35, 35));
 }
 
 .restaurant {
@@ -154,6 +158,21 @@ h2 {
     background-position: center;
 }
 
+ .restaurant-color:hover {
+    animation: restaurant 1s infinite alternate;
+}
+
+@keyframes restaurant {
+    0% {
+        color: white; /* Initial color */
+    }
+    50% {
+        color: #ffee00; /* Intermediate color */
+    }
+    100% {
+        color: #ff5500; /* Final color */
+    }
+}
 
 .restaurant:hover .content {
     opacity: 0; 
@@ -175,6 +194,22 @@ h2 {
     opacity: 0; 
 }
 
+.movie-color:hover {
+    animation: movie 1s infinite alternate;
+}
+
+@keyframes movie {
+    0% {
+        color: white; /* Initial color */
+    }
+    50% {
+        color: #ff2a00; /* Intermediate color */
+    }
+    100% {
+        color: #e100ff; /* Final color */
+    }
+}
+
 .flashcard {
     background: linear-gradient(to bottom right, #5500ff, #00a6ff);
 }
@@ -189,6 +224,22 @@ h2 {
     opacity: 0; 
 }
 
+.flashcard-color:hover {
+    animation: flashcard 1s infinite alternate;
+}
+
+@keyframes flashcard {
+    0% {
+        color: white; /* Initial color */
+    }
+    50% {
+        color: #5500ff; /* Intermediate color */
+    }
+    100% {
+        color: #00a6ff; /* Final color */
+    }
+}
+
 .recipe {
     background: linear-gradient(to bottom right, #00ffea, #91ff00);
 }
@@ -201,6 +252,22 @@ h2 {
 
 .recipe:hover .content {
     opacity: 0; 
+}
+
+.recipe-color:hover {
+    animation: recipe 1s infinite alternate;
+}
+
+@keyframes recipe {
+    0% {
+        color: white; /* Initial color */
+    }
+    50% {
+        color: #00ffea; /* Intermediate color */
+    }
+    100% {
+        color: #91ff00; /* Final color */
+    }
 }
 
 .restaurant,
